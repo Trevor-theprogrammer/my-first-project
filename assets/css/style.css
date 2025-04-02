@@ -116,6 +116,29 @@ footer {
     color: #3a3a3a; /* Matches body text color */
 }
 
+
+#social-networks {
+    list-style-type: none; /* Removes bullet points */
+    display: flex; /* Aligns items in a row */
+    justify-content: center; /* Centers the icons */
+    padding: 0;
+}
+
+#social-networks li {
+    margin: 0 10px; /* Adds spacing between the icons */
+}
+
+#social-networks i {
+    font-size: 1.6rem; /* Increases icon size */
+    color: #3a3a3a; /* Matches dark gray color */
+    padding: 5%; /* Adds spacing around the icons */
+    transition: color 0.3s ease; /* Adds smooth hover transition */
+}
+
+#social-networks i:hover {
+    color: #0077b5; /* Changes color on hover (LinkedIn blue as an example) */
+}
+
 /* Tablet styles */
 @media screen and (min-width: 768px) {
     nav {
@@ -125,7 +148,7 @@ footer {
         box-shadow: none; /* Remove box shadow */
         padding-right: 15px; /* Add spacing to the right */
     }
-
+    
     #menu {
         display: flex; /* Arrange menu items in a row */
     }
