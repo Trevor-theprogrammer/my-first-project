@@ -110,12 +110,9 @@ nav {
 /* Footer styling */
 footer {
     background-color: #ffffff; /* Matches header for consistency */
-    text-align: center; /* Centers footer content */
-    padding: 10px 0; /* Adds spacing around footer text */
-    font-size: 1rem; /* Keeps text readable */
-    color: #3a3a3a; /* Matches body text color */
+    text-align: center; /* Centers content in the footer */
+    padding: 20px 0; /* Adds spacing above and below */
 }
-
 
 #social-networks {
     list-style-type: none; /* Removes bullet points */
@@ -138,6 +135,7 @@ footer {
 #social-networks i:hover {
     color: #0077b5; /* Changes color on hover (LinkedIn blue as an example) */
 }
+
 
 /* Tablet styles */
 @media screen and (min-width: 768px) {
