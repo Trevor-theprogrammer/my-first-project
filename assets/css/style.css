@@ -12,17 +12,21 @@ body {
     flex-direction: column;
     /* Generic project styles */
     color: #3a3a3a;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Main content */
 main {
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
+    background-color: lightblue;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Header */
 header {
     background-color: #ffffff;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Main content background */
