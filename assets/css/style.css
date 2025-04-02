@@ -1,4 +1,4 @@
-  /* General styles for all elements */
+ /* General styles for all elements */
 * {
     padding: 0;
     margin: 0;
@@ -26,20 +26,17 @@ main {
 
 /* Header */
 header {
-    header {
-        background-color: #ffffff;
-        font-family: 'Lato', sans-serif;
-        position: fixed; /* Keeps header fixed at the top */
-        top: 0; /* Position at top of screen */
-        width: 100%; /* Ensures full-width */
-        z-index: 99; /* Layers above other content */
-        padding: 0 15px; /* Adds spacing on left and right */
-        box-shadow: 0 2px 5px #3a3a3a; /* Adds a subtle shadow for depth */
-        display: flex; /* Aligns header elements in a row */
-        justify-content: center; /* Centers the logo horizontally */
-        align-items: center; /* Aligns items vertically */
-    }
-    
+    background-color: #ffffff;
+    font-family: 'Lato', sans-serif;
+    position: fixed; /* Keeps header fixed at the top */
+    top: 0; /* Position at top of screen */
+    width: 100%; /* Ensures full-width */
+    z-index: 99; /* Layers above other content */
+    padding: 0 15px; /* Adds spacing on left and right */
+    box-shadow: 0 2px 5px #3a3a3a; /* Adds a subtle shadow for depth */
+    display: flex; /* Aligns header elements in a row */
+    justify-content: center; /* Centers the logo horizontally */
+    align-items: center; /* Aligns items vertically */
 }
 
 /* Remove link default styling */
@@ -118,3 +115,44 @@ footer {
     font-size: 1rem; /* Keeps text readable */
     color: #3a3a3a; /* Matches body text color */
 }
+
+/* Tablet styles */
+@media screen and (min-width: 768px) {
+    nav {
+        display: block; /* Always show the navbar */
+        position: relative; /* Moves it back into the header */
+        width: fit-content; /* Adjust width to fit content */
+        box-shadow: none; /* Remove box shadow */
+        padding-right: 15px; /* Add spacing to the right */
+    }
+
+    #menu {
+        display: flex; /* Arrange menu items in a row */
+    }
+
+    #menu li {
+        padding-left: 10px; /* Add spacing between items */
+    }
+
+    .nav-toggle-label {
+        display: none; /* Hide the toggle label */
+    }
+
+    h1#logo {
+        font-size: 2.8rem; /* Make logo larger */
+        line-height: 75px; /* Add more vertical space */
+        margin: 0 0.5rem; /* Add horizontal spacing */
+    }
+
+    main {
+        margin-top: 79px; /* Adjust top margin for larger header */
+    }
+}
+
+/* Laptop styles */
+@media screen and (min-width: 992px) {
+    #menu a:hover {
+        border-bottom: 1px solid #252525; /* Show underline on hover */
+    }
+}
+
