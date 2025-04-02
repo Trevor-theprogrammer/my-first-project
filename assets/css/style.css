@@ -10,18 +10,16 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    /* Generic project styles */
     color: #3a3a3a;
-    font-family: 'Lato', sans-serif;  
+    font-family: 'Lato', sans-serif;
 }
 
 /* Main content */
 main {
-    /* Make main element take up any surplus space to push footer down */
-    flex: 1 0 auto;
+    flex: 1 0 auto; /* Take up remaining space to push footer down */
     background-color: lightblue;
     font-family: 'Lato', sans-serif;
-    margin-top: 47px; /* Pushes content below the fixed header */
+    margin-top: 47px; /* Push content below fixed header */
 }
 
 /* Header */
@@ -29,56 +27,55 @@ header {
     background-color: #ffffff;
     font-family: 'Lato', sans-serif;
     position: fixed; /* Keeps header fixed at the top */
-    top: 0; /* Position at top of screen */
-    width: 100%; /* Ensures full-width */
-    z-index: 99; /* Layers above other content */
-    padding: 0 15px; /* Adds spacing on left and right */
-    box-shadow: 0 2px 5px #3a3a3a; /* Adds a subtle shadow for depth */
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    padding: 0 15px;
+    box-shadow: 0 2px 5px #3a3a3a; /* Adds shadow for depth */
     display: flex; /* Aligns header elements in a row */
-    justify-content: center; /* Centers the logo horizontally */
+    justify-content: center; /* Centers logo horizontally */
     align-items: center; /* Aligns items vertically */
 }
 
 /* Remove link default styling */
 header a {
-    text-decoration: none; /* Removes underline */
-    color: inherit; /* Inherits color from parent */
+    text-decoration: none;
+    color: inherit;
 }
 
 /* Logo styling */
 h1#logo {
     font-family: 'Oswald', sans-serif;
     font-size: 2.5rem;
-    color: #252525; /* Dark gray for better contrast */
-    text-align: center;
+    color: #252525;
+    text-transform: uppercase;
+    letter-spacing: 2px;
     margin: 20px 0;
-    text-transform: uppercase; /* Makes logo uppercase */
-    letter-spacing: 2px; /* Adds spacing between letters */
 }
 
 /* Checkbox toggle (hidden) */
 #nav-toggle {
-    display: none; /* Hides the checkbox */
+    display: none;
 }
 
 /* Label styling */
 .nav-toggle-label {
-    cursor: pointer; /* Makes it clickable */
-    font-size: 2rem; /* Larger size for visibility */
-    color: #252525; /* Matches logo color */
-    position: absolute; /* Positions the label */
+    cursor: pointer;
+    font-size: 2rem;
+    color: #252525;
+    position: absolute;
     top: 15px;
     right: 15px;
 }
 
 /* Navigation menu styles */
 nav {
-    position: absolute; /* Takes nav out of normal flow */
-    top: 100%; /* Positions it below the header */
-    left: 0; /* Aligns to the left of the screen */
-    width: 100%; /* Full width */
-    background-color: #ffffff; /* White background */
-    box-shadow: 0 2px 5px #3a3a3a; /* Adds shadow for depth */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px #3a3a3a;
     display: none; /* Hidden by default */
 }
 
@@ -87,93 +84,95 @@ nav {
 }
 
 #menu {
-    list-style: none; /* Removes bullet points */
-    font-size: 1.2em; /* Slightly increases font size */
-    letter-spacing: 1px; /* Adds breathing space */
+    list-style: none;
+    font-size: 1.2em;
+    letter-spacing: 1px;
     margin: 0;
     padding: 0;
 }
 
 #menu li {
-    margin-bottom: 1em; /* Adds spacing between menu items */
+    margin-bottom: 1em; /* Add spacing between menu items */
 }
 
 #menu a {
-    color: #252525; /* Matches logo color */
+    color: #252525;
 }
 
 /* Active page styling */
 .active {
-    border-bottom: 1px solid #252525; /* Highlights current page link */
+    border-bottom: 1px solid #252525;
 }
 
 /* Footer styling */
 footer {
-    background-color: #ffffff; /* Matches header for consistency */
-    text-align: center; /* Centers content in the footer */
-    padding: 20px 0; /* Adds spacing above and below */
+    background-color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1rem;
+    color: #3a3a3a;
+    flex-shrink: 0;
 }
 
 #social-networks {
-    list-style-type: none; /* Removes bullet points */
-    display: flex; /* Aligns items in a row */
-    justify-content: center; /* Centers the icons */
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
     padding: 0;
 }
 
 #social-networks li {
-    margin: 0 10px; /* Adds spacing between the icons */
+    margin: 0 10px;
 }
 
 #social-networks i {
-    font-size: 1.6rem; /* Increases icon size */
-    color: #3a3a3a; /* Matches dark gray color */
-    padding: 5%; /* Adds spacing around the icons */
-    transition: color 0.3s ease; /* Adds smooth hover transition */
+    font-size: 1.6rem;
+    color: #3a3a3a;
+    padding: 5%;
+    transition: color 0.3s ease;
 }
 
 #social-networks i:hover {
-    color: #0077b5; /* Changes color on hover (LinkedIn blue as an example) */
+    color: #0077b5; /* Example: LinkedIn blue */
 }
-
 
 /* Tablet styles */
 @media screen and (min-width: 768px) {
     nav {
-        display: block; /* Always show the navbar */
-        position: relative; /* Moves it back into the header */
-        width: fit-content; /* Adjust width to fit content */
-        box-shadow: none; /* Remove box shadow */
-        padding-right: 15px; /* Add spacing to the right */
+        display: block;
+        position: relative;
+        width: fit-content;
+        box-shadow: none;
+        padding-right: 15px;
     }
     
     #menu {
-        display: flex; /* Arrange menu items in a row */
+        display: flex;
     }
 
     #menu li {
-        padding-left: 10px; /* Add spacing between items */
+        padding-left: 10px;
     }
 
     .nav-toggle-label {
-        display: none; /* Hide the toggle label */
+        display: none; /* Hide toggle label */
     }
 
     h1#logo {
-        font-size: 2.8rem; /* Make logo larger */
-        line-height: 75px; /* Add more vertical space */
-        margin: 0 0.5rem; /* Add horizontal spacing */
+        font-size: 2.8rem;
+        line-height: 75px;
+        margin: 0 0.5rem;
     }
 
     main {
-        margin-top: 79px; /* Adjust top margin for larger header */
+        margin-top: 79px;
     }
 }
 
 /* Laptop styles */
 @media screen and (min-width: 992px) {
     #menu a:hover {
-        border-bottom: 1px solid #252525; /* Show underline on hover */
+        border-bottom: 1px solid #252525;
     }
 }
 
