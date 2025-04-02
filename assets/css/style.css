@@ -26,17 +26,20 @@ main {
 
 /* Header */
 header {
-    background-color: #ffffff;
-    font-family: 'Lato', sans-serif;
-    position: fixed; /* Keeps header fixed at the top */
-    top: 0; /* Position at top of screen */
-    width: 100%; /* Ensures full-width */
-    z-index: 99; /* Layers above other content */
-    padding: 0 15px; /* Adds spacing on left and right */
-    box-shadow: 0 2px 5px #3a3a3a; /* Adds a subtle shadow for depth */
-    display: flex; /* Aligns header elements horizontally */
-    justify-content: space-between; /* Space between logo and nav toggle */
-    align-items: baseline; /* Aligns items vertically */
+    header {
+        background-color: #ffffff;
+        font-family: 'Lato', sans-serif;
+        position: fixed; /* Keeps header fixed at the top */
+        top: 0; /* Position at top of screen */
+        width: 100%; /* Ensures full-width */
+        z-index: 99; /* Layers above other content */
+        padding: 0 15px; /* Adds spacing on left and right */
+        box-shadow: 0 2px 5px #3a3a3a; /* Adds a subtle shadow for depth */
+        display: flex; /* Aligns header elements in a row */
+        justify-content: center; /* Centers the logo horizontally */
+        align-items: center; /* Aligns items vertically */
+    }
+    
 }
 
 /* Remove link default styling */
