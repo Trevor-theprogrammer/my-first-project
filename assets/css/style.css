@@ -1,4 +1,4 @@
- /* General styles for all elements */
+  /* General styles for all elements */
 * {
     padding: 0;
     margin: 0;
@@ -21,6 +21,7 @@ main {
     flex: 1 0 auto;
     background-color: lightblue;
     font-family: 'Lato', sans-serif;
+    margin-top: 47px; /* Pushes content below the fixed header */
 }
 
 /* Header */
@@ -33,6 +34,9 @@ header {
     z-index: 99; /* Layers above other content */
     padding: 0 15px; /* Adds spacing on left and right */
     box-shadow: 0 2px 5px #3a3a3a; /* Adds a subtle shadow for depth */
+    display: flex; /* Aligns header elements horizontally */
+    justify-content: space-between; /* Space between logo and nav toggle */
+    align-items: baseline; /* Aligns items vertically */
 }
 
 /* Remove link default styling */
@@ -52,12 +56,36 @@ h1#logo {
     letter-spacing: 2px; /* Adds spacing between letters */
 }
 
-/* Footer background */
-footer {
-    background-color: #ffffff;
+/* Checkbox toggle (hidden) */
+#nav-toggle {
+    display: none; /* Hides the checkbox */
+}
+
+/* Label styling */
+.nav-toggle-label {
+    cursor: pointer; /* Makes it clickable */
+    font-size: 2rem; /* Larger size for visibility */
+    color: #252525; /* Matches logo color */
+    position: absolute; /* Positions the label */
+    top: 15px;
+    right: 15px;
 }
 
 /* Navigation menu styles */
+nav {
+    position: absolute; /* Takes nav out of normal flow */
+    top: 100%; /* Positions it below the header */
+    left: 0; /* Aligns to the left of the screen */
+    width: 100%; /* Full width */
+    background-color: #ffffff; /* White background */
+    box-shadow: 0 2px 5px #3a3a3a; /* Adds shadow for depth */
+    display: none; /* Hidden by default */
+}
+
+#nav-toggle:checked ~ nav {
+    display: block; /* Shows menu when checkbox is checked */
+}
+
 #menu {
     list-style: none; /* Removes bullet points */
     font-size: 1.2em; /* Slightly increases font size */
@@ -77,4 +105,13 @@ footer {
 /* Active page styling */
 .active {
     border-bottom: 1px solid #252525; /* Highlights current page link */
+}
+
+/* Footer styling */
+footer {
+    background-color: #ffffff; /* Matches header for consistency */
+    text-align: center; /* Centers footer content */
+    padding: 10px 0; /* Adds spacing around footer text */
+    font-size: 1rem; /* Keeps text readable */
+    color: #3a3a3a; /* Matches body text color */
 }
