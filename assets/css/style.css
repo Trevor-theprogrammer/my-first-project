@@ -1,0 +1,36 @@
+/* Asterisk wildcard selector to override default styles added by the browser */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* General styles for body */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* Generic project styles */
+    color: #3a3a3a;
+}
+
+/* Main content */
+main {
+    /* Make main element take up any surplus space to push footer down */
+    flex: 1 0 auto;
+}
+
+/* Header */
+header {
+    background-color: #ffffff;
+}
+
+/* Main content background */
+main {
+    background-color: lightblue;
+}
+
+/* Footer background */
+footer {
+    background-color: #ffffff;
+}
